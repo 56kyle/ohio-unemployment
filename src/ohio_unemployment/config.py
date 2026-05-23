@@ -1,4 +1,5 @@
 """Module responsible for handling config used throughout the ohio_unemployment package."""
+
 from functools import lru_cache
 from pathlib import Path
 from typing import ClassVar
@@ -13,6 +14,7 @@ from ohio_unemployment.constants import DEFAULT_PYDANTIC_SETTINGS
 
 class Config(BaseSettings):
     """The primary config for the ohio_unemployment package."""
+
     model_config: ClassVar[SettingsConfigDict] = DEFAULT_PYDANTIC_SETTINGS
 
 

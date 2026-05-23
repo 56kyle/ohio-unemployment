@@ -1,4 +1,5 @@
 """Module containing constants used throughout the ohio_unemployment package."""
+
 import datetime
 from pathlib import Path
 
@@ -29,9 +30,7 @@ DEFAULT_CONFIG_PATH: Path = USER_CONFIG_FOLDER / ".env"
 DEFAULT_PYDANTIC_CONFIG: ConfigDict = ConfigDict(arbitrary_types_allowed=True)
 DEFAULT_PYDANTIC_CONFIG_FROZEN: ConfigDict = ConfigDict(arbitrary_types_allowed=True, frozen=True)
 DEFAULT_PYDANTIC_SETTINGS: SettingsConfigDict = SettingsConfigDict(
-    arbitrary_types_allowed=True,
-    env_nested_delimiter="__",
-    env_prefix="OHIO_UNEMPLOYMENT__"
+    arbitrary_types_allowed=True, env_nested_delimiter="__", env_prefix="OHIO_UNEMPLOYMENT__"
 )
 
 
