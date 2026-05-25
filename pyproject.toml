@@ -1,6 +1,6 @@
 [project]
 name = "ohio-unemployment"
-version = "0.0.0"
+version = "0.1.0"
 description = "ohio-unemployment"
 authors = [
     { name = "Kyle Oliver", email = "56kyleoliver@gmail.com" },
